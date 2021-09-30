@@ -1,0 +1,27 @@
+:root {
+    /* COLORS */
+    --c-dark:#121212;
+    --c-black: rgba(0,0,0, 0.8);
+    --c-green: ;
+}
+
+body {
+    background-color: var(--c-dark);
+}
+
+.root {
+    height: 100vh;
+    position: relative;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+            "navbar main-view main-view"
+            "player player player";
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: var(--c-black);
+    width: 14.375rem;
+    flex: 1;
+}
